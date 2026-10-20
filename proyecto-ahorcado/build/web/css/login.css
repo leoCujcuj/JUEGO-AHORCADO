@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background: url("../img/fondo-login.jpg") no-repeat center center/cover;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(44, 62, 80, 0.7);
+  backdrop-filter: blur(3px);
+  z-index: -1;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 2em;
+  background-color: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  max-width: 320px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.form:hover {
+  transform: scale(1.03);
+}
+
+#heading {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  padding: 0.6em 0.8em;
+  border-radius: 8px;
+  background-color: #f4f6f7;
+  border: 1px solid #ddd;
+}
+
+.input-icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: #2980b9;
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+.input-field::placeholder {
+  color: #7f8c8d;
+}
+
+.form .btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5em;
+}
+
+.button1 {
+  padding: 0.6em 1.5em;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button1:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.button1:active {
+  transform: translateY(0);
+}
+
+
+.button1 {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+}
+.button1:hover {
+  background: linear-gradient(135deg, #2980b9, #1f6391);
+}
+.input-field:focus {
+  border-bottom: 2px solid #3498db;
+}
